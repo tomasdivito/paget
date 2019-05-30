@@ -1,15 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { mount, route } from 'navi'
+import { Router, View } from 'react-navi'
 import './App.css';
-import Header from './components/header/header';
+
+import Landing from './components/landing/landing';
 
 function App() {
+  const routes = mount({
+    '/': route({
+      title: `Tomas Di Vito's Portfolio`,
+      view: <Landing />,
+    }),
+    '/projects': route({
+      title: `Tomas Di Vito's Projects`,
+      view: <div>Projects placeholder!</div>
+    })
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-    </div>
+    <Router routes={routes}>
+      <div className="app">
+        <View />
+      </div>
+    </Router>
   );
 }
 
