@@ -9,11 +9,13 @@
   font-size: 25px;
 }
 
+.home-title {
+  left: 0;
+}
+
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  width: 100%;
+
   text-align: center;
   height: 7vh;
   background-color: $secondary-color;
