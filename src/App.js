@@ -1,8 +1,9 @@
 import React from 'react';
 import { mount, route } from 'navi'
 import { Router, View } from 'react-navi'
-import './App.css';
+import './App.scss';
 
+import Layout from './components/layout/layout';
 import Landing from './components/landing/landing';
 
 function App() {
@@ -18,10 +19,10 @@ function App() {
   });
 
   return (
-    <Router routes={routes}>
-      <div className="app">
+    <Router style={{ height: '100%' }} routes={routes}>
+      <Layout>
         <View />
-      </div>
+      </Layout>
     </Router>
   );
 }
