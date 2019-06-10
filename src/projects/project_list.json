@@ -1,0 +1,9 @@
+{
+    "projects": [
+        {
+            "name": "Capdata Dashboard",
+            "thumbnail": "dashboard1.png",
+            "description": "capdata-dashboard.md"
+        }
+    ]
+}

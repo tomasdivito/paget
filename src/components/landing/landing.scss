@@ -1,19 +1,26 @@
 @import '../../style/colors.scss';
 
 .logo {
-  // animation: logo-spin infinite 20s linear;
   width: 10em;
   pointer-events: none;
   border-radius: 50%,
 }
 
+h2.portfolio-title {
+  margin-bottom: 0px;
+}
+
+.social-link {
+  height: 50px;
+  width: 50px;
+}
+
 .landing {
-  position: relative !important;
-  z-index: -1;
   text-align: center;
   background-color: $primary-color;
-  height: 100%;
+  min-height: 50vh;
   display: flex;
+  padding: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

@@ -1,11 +1,11 @@
 @import './style/colors.scss';
 
-html, body {
+body, html {
   height: 100%;
 }
 
-.full-height {
-  height: 100%;
+#app {
+  min-height: 100vh;
 }
 
 a {
