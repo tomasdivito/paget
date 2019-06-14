@@ -1,9 +1,28 @@
 {
-    "projects": [
-        {
-            "name": "Capdata Dashboard",
-            "thumbnail": "dashboard1.png",
-            "description": "capdata-dashboard.md"
-        }
-    ]
+  "projects": [
+    {
+      "code": "capdata-floorplans",
+      "name": "Capdata Floorplans",
+      "thumbnail": "floorplans.png",
+      "description": "capdata-dashboard.md"
+    },
+    {
+      "code": "capdata-dashboard",
+      "name": "Capdata Dashboard",
+      "thumbnail": "dashboard1.png",
+      "description": "capdata-dashboard.md"
+    },
+    {
+      "code": "dc-solar",
+      "name": "DC Solar Dashboard",
+      "thumbnail": "dcsolar.png",
+      "description": "capdata-dashboard.md"
+    },
+    {
+      "code": "capdata-tagging-tool",
+      "name": "Capdata Tagging Tool",
+      "thumbnail": "tagging-tool.png",
+      "description": "capdata-dashboard.md"
+    }
+  ]
 }
