@@ -9,7 +9,7 @@ const Projects = function (props) {
   console.log('this list of projects:', PROJECTS);
 
   return (
-    <div className="project-galley">
+    <div className="project-gallery">
       {PROJECTS.map(project => (
         <Project key={project.code} project={project} />
       ))}

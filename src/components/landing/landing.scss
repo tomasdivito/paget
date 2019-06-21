@@ -13,14 +13,19 @@ h2.portfolio-title {
 .social-link {
   height: 50px;
   width: 50px;
+  margin: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
 }
 
 .landing {
   text-align: center;
   background-color: $primary-color;
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
-  padding: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
