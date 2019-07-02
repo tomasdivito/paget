@@ -5,11 +5,11 @@ import './gallery.scss';
 
 const Gallery = function () {
   return (
-    <div className="portfolio-gallery">
-      <h2>Portfolio</h2>
+    <section id="gallery" className="portfolio-gallery">
+      <h2 className="title">Portfolio</h2>
 
       <Projects />
-    </div>
+    </section>
   )
 }
 

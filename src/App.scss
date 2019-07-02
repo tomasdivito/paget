@@ -1,5 +1,9 @@
 @import './style/colors.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   height: 100%;
 }

@@ -5,9 +5,9 @@ const Images = require.context("../../images");
 
 const Landing = () => {
   return (
-    <div className="landing">
+    <section id="landing" className="landing">
       <img alt="toti-logo" className="logo" src={avatar} />
-      <h2 className="portfolio-title">Tomas Di Vito</h2>
+      <span className="portfolio-title">Tomas Di Vito</span>
       <p>Freelance Software Developer</p>
       <div className="social-links">
         <a href="https://www.github.com/tomasdivito">
@@ -20,7 +20,10 @@ const Landing = () => {
           <img className="social-link" src={Images("./Twitter.svg")} alt="Twitter logo" />
         </a>
       </div>
-    </div>
+      <a className="page-link" href="#gallery">
+        Portfolio
+      </a>
+    </section>
   );
 };
 

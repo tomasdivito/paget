@@ -41,3 +41,29 @@ h2.portfolio-title {
     transform: rotate(360deg);
   }
 }
+
+.page-link {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.page-link:hover {
+  animation: upAndDownAnimation ease-in 1s infinite;
+}
+
+@keyframes upAndDownAnimation {
+  0%{
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}

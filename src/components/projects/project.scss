@@ -9,24 +9,28 @@
   padding: 25px;
   background: $primary-color;
 
+  width: 350px;
+  height: 300px;
+
   margin: 25px;
 
   border-radius: 5px 5px 5px 5px;
   border: 1px solid $gray-color;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
   
-  h2 {
+  h4 {
     margin: 0;
+    margin-bottom: 1rem;
   }
 }
 
 .project-gallery {
   display: flex;
-  flex-flow: row;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.project-thumbnail {
-  height: 250px;
-  width: 350px;
 }
