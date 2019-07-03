@@ -1,12 +1,7 @@
+@import '../../style/colors.scss';
+
 .portfolio-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-
-  min-height: 100vh;
-
-  background-color: #1f1f1f;
+  background-color: $primary-color;
   color: white;
   
   $font-size: calc(10px + 2vmin);

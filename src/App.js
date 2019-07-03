@@ -2,14 +2,17 @@ import React from 'react';
 import './App.scss';
 
 import Landing from './components/landing/landing';
+import AboutMe from './components/about/about_me';
 import Gallery from './components/gallery/gallery';
+import Contact from './components/contact/contact';
 
-// TODO: Use `<section>` tag to separate the page
 function App() {
   return (
     <div id="app">
       <Landing />
+      <AboutMe />
       <Gallery />
+      <Contact />
     </div>
   );
 }

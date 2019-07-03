@@ -1,6 +1,7 @@
 @import './style/colors.scss';
 
 html {
+  background-color: $gray-color;
   scroll-behavior: smooth;
 }
 
@@ -19,4 +20,17 @@ a {
   &:active {
     color: $link-color;
   }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
+  min-height: 100vh;
+  color: white;
+
+  padding-left: 100px;
+  padding-right: 100px;
 }

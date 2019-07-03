@@ -22,15 +22,8 @@ h2.portfolio-title {
 }
 
 .landing {
-  text-align: center;
   background-color: $primary-color;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 @keyframes logo-spin {
@@ -42,28 +35,13 @@ h2.portfolio-title {
   }
 }
 
-.page-link {
-  position: absolute;
-  bottom: 0px;
+.page-links {
   margin-bottom: 2rem;
-  font-size: 20px;
-  transition: all 1s ease-in-out;
-}
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
 
-.page-link:hover {
-  animation: upAndDownAnimation ease-in 1s infinite;
-}
-
-@keyframes upAndDownAnimation {
-  0%{
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(5px);
-  }
-
-  100%{
-    transform: translateY(0px);
+  a {
+    margin: 20px;
   }
 }

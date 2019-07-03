@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <section id="landing" className="landing">
       <img alt="toti-logo" className="logo" src={avatar} />
-      <span className="portfolio-title">Tomas Di Vito</span>
+      <h2 className="portfolio-title">Tomas Di Vito</h2>
       <p>Freelance Software Developer</p>
       <div className="social-links">
         <a href="https://www.github.com/tomasdivito">
@@ -20,9 +20,17 @@ const Landing = () => {
           <img className="social-link" src={Images("./Twitter.svg")} alt="Twitter logo" />
         </a>
       </div>
-      <a className="page-link" href="#gallery">
-        Portfolio
-      </a>
+      <div className="page-links">
+        <a className="page-link" href="#about-me">
+          About Me
+        </a>
+        <a className="page-link" href="#gallery">
+          Portfolio
+        </a>
+        <a className="page-link" href="#contact">
+          Contact
+        </a>
+      </div>
     </section>
   );
 };

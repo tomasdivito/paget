@@ -1,0 +1,10 @@
+@import '../../style/colors.scss';
+
+.about-me {
+  background-color: $secondary-color;
+  $font-size: calc(10px + 2vmin);
+
+  .title {
+    font-size: $font-size;
+  }
+}

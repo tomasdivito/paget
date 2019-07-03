@@ -14,17 +14,29 @@
 
   margin: 25px;
 
+  overflow: hidden;
+
   border-radius: 5px 5px 5px 5px;
   border: 1px solid $gray-color;
 
   img {
-    height: 100%;
     width: 100%;
   }
   
-  h4 {
+  h2 {
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  .details {
+    transition: all .2s ease-in-out;
+    display: none;
+  }
+
+  &:hover {
+    .details {
+      display: block;
+    }
   }
 }
 
