@@ -1,16 +1,19 @@
 import React from 'react';
 
-import Projects from '../projects/projects';
-import './portfolio.scss';
+import Project from './project';
+import PROJECTS_JSON from '../../projects/project_list.json';
+import './project.scss';
 
-const Portfolio = function () {
+export default () => {
+  const PROJECTS = PROJECTS_JSON.projects;
+
   return (
     <React.Fragment>
-      <h2 className="title">Portfolio</h2>
-
-      <Projects />
+      <div className="portfolio-gallery">
+        {PROJECTS.map(project => (
+          <Project key={project.code} project={project} />
+        ))}
+      </div>
     </React.Fragment>
-  )
-}
-
-export default Portfolio;
+  );
+};

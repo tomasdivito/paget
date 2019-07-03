@@ -4,6 +4,8 @@ import Portfolio from '../portfolio/portfolio';
 import AboutMe from '../about/about_me';
 import Contact from '../contact/contact';
 
+import './gallery.scss';
+
 const pages = {
   portfolio: <Portfolio />,
   about: <AboutMe />,
@@ -27,22 +29,29 @@ function Gallery(props) {
         document.querySelector('#gallery').scrollIntoView();
       }
     }
-  }, [setCurrentPage, props])
+  }, [setCurrentPage, props]);
+
+  const changeCurrentPage = newPage => {
+    setCurrentPage(pages[newPage]);
+    window.history.pushState(null, null, `#${newPage}`);
+  };
 
   return (
     <section id="gallery">
-      <div>
-        <button onClick={() => setCurrentPage(pages.portfolio)}>
-          Portfolio
-        </button>
-        <button onClick={() => setCurrentPage(pages.about)}>
+      <div className="gallery-selector">
+        <button onClick={() => changeCurrentPage('about')}>
           About Me
         </button>
-        <button onClick={() => setCurrentPage(pages.contact)}>
+        <button onClick={() => changeCurrentPage('portfolio')}>
+          Portfolio
+        </button>
+        <button onClick={() => changeCurrentPage('contact')}>
           Contact
         </button>
       </div>
-      { currentPage }
+      <div className="gallery-section">
+        { currentPage }
+      </div>
     </section>
   )
 };

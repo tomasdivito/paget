@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import './App.scss';
-import './landing.scss';
 
 import Gallery from './components/gallery/gallery';
 
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <div id="app">
-      <section id="landing" className="landing">
+      <section className="landing">
         <img alt="toti-logo" className="logo" src={Images('./toti-pixel.png')} />
         <h2 className="portfolio-title">Tomas Di Vito</h2>
         <p>Freelance Software Developer</p>

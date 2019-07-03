@@ -30,7 +30,59 @@ section {
 
   min-height: 100vh;
   color: white;
+  text-align: center;
 
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.logo {
+  width: 10em;
+  pointer-events: none;
+  border-radius: 50%,
+}
+
+h2.portfolio-title {
+  margin-bottom: 0px;
+}
+
+.social-link {
+  height: 50px;
+  width: 50px;
+
+  @media (max-width: 768px) {
+    height: 3rem;
+    width: 3rem;
+  }
+  margin: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.landing {
+  background-color: $primary-color;
+  font-size: calc(10px + 2vmin);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-links {
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+
+  a {
+    margin: 20px;
+  }
 }
