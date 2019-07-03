@@ -22,13 +22,13 @@ function App() {
         <h2 className="portfolio-title">Tomas Di Vito</h2>
         <p>Freelance Software Developer</p>
         <div className="social-links">
-          <a href="https://www.github.com/tomasdivito">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/tomasdivito">
             <img className="social-link" src={Images('./Github.svg')} alt="Github logo" />
           </a>
-          <a href="https://www.linkedin.com/in/tomas-di-vito">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tomas-di-vito">
             <img className="social-link" src={Images('./Linkedin.svg')} alt="Linkedin logo" />
           </a>
-          <a href="https://www.twitter.com/totiiimon">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/totiiimon">
             <img className="social-link" src={Images('./Twitter.svg')} alt="Twitter logo" />
           </a>
         </div>
