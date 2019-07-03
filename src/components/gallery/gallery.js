@@ -39,13 +39,13 @@ function Gallery(props) {
   return (
     <section id="gallery">
       <div className="gallery-selector">
-        <button onClick={() => changeCurrentPage('about')}>
+        <button className={`btn-selector ${currentPage === pages.about ? 'btn-selector-active' : ''}`} onClick={() => changeCurrentPage('about')}>
           About Me
         </button>
-        <button onClick={() => changeCurrentPage('portfolio')}>
+        <button className={`btn-selector ${currentPage === pages.portfolio ? 'btn-selector-active' : ''}`} onClick={() => changeCurrentPage('portfolio')}>
           Portfolio
         </button>
-        <button onClick={() => changeCurrentPage('contact')}>
+        <button className={`btn-selector ${currentPage === pages.contact ? 'btn-selector-active' : ''}`} onClick={() => changeCurrentPage('contact')}>
           Contact
         </button>
       </div>

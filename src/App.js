@@ -7,11 +7,24 @@ import Gallery from './components/gallery/gallery';
 const Images = require.context("./images");
 
 function App() {
-  let [currentGallery, setCurrentGallery] = useState(null);
+  let [currentGallery, setCurrentGallery] = useState('portfolio');
 
   let changeGallery = (newGallery) => {
     document.querySelector('#gallery').scrollIntoView();
-    setCurrentGallery(newGallery);
+
+    if (currentGallery === newGallery) {
+      setCurrentGallery(null);
+    }
+
+    // This is a **DIRTY HACK** in order to prevent a bug
+    // that can be reproduced in this way:
+    // Select `About` in the Landing.
+    // In the Gallery select the `Portfolio` button.
+    // Go back to Landing and if you try to select `About` it
+    // won't change since it's already selected. So we rewrite the
+    // state with `null` first and we introduced the real change under
+    // a timeout in order for the `null` state to take effect first.
+    setTimeout(() => setCurrentGallery(newGallery), 0);
   };
 
   return (
