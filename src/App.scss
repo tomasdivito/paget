@@ -86,3 +86,17 @@ h2.portfolio-title {
     margin: 20px;
   }
 }
+
+.skill-tag {
+  display: inline-block;
+  font-size: 10px;
+  border: 1.5px solid $gray-color;
+  background-color: $secondary-color;
+  color: white;
+  padding: 3px;
+  margin: 5px;
+
+  span {
+    font-weight: bold;
+  }
+}

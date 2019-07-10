@@ -1,13 +1,8 @@
 import React from 'react';
 
+import Skill from '../skill';
 import './project.scss';
 const Images = require.context("../../images");
-
-const Skill = ({ skill }) => (
-  <span className="skill-tag">
-    {skill}
-  </span>
-);
 
 const Project = function ({ project }) {
   return (
@@ -21,7 +16,7 @@ const Project = function ({ project }) {
         <p>Basic description of the project, hidden for when you click or hover over the project</p>
         <div className="skill-list">
           {project.skills.map((skill, index) => (
-            <Skill skill={skill} />
+            <Skill key={index} skill={skill} />
           ))}
         </div>
       </div>

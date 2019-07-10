@@ -27,8 +27,15 @@
     background-color: white;
     color: $primary-color;
   }
+
+  &:focus {
+    outline: 0;
+  }
+
+  cursor: pointer;
 }
 
 .btn-selector-active {
-  background-color: $gray-color;
+  background-color: $gray-color !important;
+  color: white !important;
 }

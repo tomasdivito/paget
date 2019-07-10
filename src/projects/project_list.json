@@ -5,28 +5,28 @@
       "name": "Capdata Floorplans",
       "thumbnail": "floorplans.png",
       "description": "capdata-dashboard.md",
-      "skills": ["Javascript", "AngularJS", "HTML", "CSS" ]
+      "skills": ["Javascript", "C3JS", "AngularJS", "HTML", "CSS" ]
     },
     {
       "code": "capdata-dashboard",
       "name": "Capdata Dashboard",
       "thumbnail": "dashboard1.png",
       "description": "capdata-dashboard.md",
-      "skills": ["Javascript", "AngularJS", "HTML", "CSS" ]
+      "skills": ["Javascript", "C3JS", "Webpack", "AngularJS", "HTML", "CSS" ]
     },
     {
       "code": "dc-solar",
       "name": "DC Solar Dashboard",
       "thumbnail": "dcsolar.png",
       "description": "capdata-dashboard.md",
-      "skills": ["Javascript", "AngularJS", "HTML", "CSS" ]
+      "skills": ["Javascript", "C3JS", "AngularJS", "HTML", "CSS" ]
     },
     {
       "code": "capdata-tagging-tool",
       "name": "Capdata Tagging Tool",
       "thumbnail": "tagging-tool.png",
       "description": "capdata-dashboard.md",
-      "skills": ["Javascript", "AngularJS", "HTML", "CSS" ]
+      "skills": ["Javascript", "AngularJS", "HTML", "CSS", "Handsonetable" ]
     }
   ]
 }
