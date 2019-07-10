@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group'
 
 import Portfolio from '../portfolio/portfolio';
 import AboutMe from '../about/about_me';
@@ -7,9 +8,9 @@ import Contact from '../contact/contact';
 import './gallery.scss';
 
 const pages = {
-  portfolio: <Portfolio />,
-  about: <AboutMe />,
-  contact: <Contact />,
+  portfolio: <Portfolio key="1" />,
+  about: <AboutMe key="2" />,
+  contact: <Contact key="3" />,
 };
 
 function Gallery(props) {
@@ -50,7 +51,13 @@ function Gallery(props) {
         </button>
       </div>
       <div className="gallery-section">
-        { currentPage }
+        <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}
+        >
+          { currentPage }
+        </CSSTransitionGroup>
       </div>
     </section>
   )
