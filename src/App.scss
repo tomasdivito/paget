@@ -100,3 +100,28 @@ h2.portfolio-title {
     font-weight: bold;
   }
 }
+
+.btn-selector {
+  padding: 10px;
+  border: 0;
+  margin: 5px;
+
+  color: white;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  cursor: pointer;
+}
+
+.btn-selector-active {
+  background-color: $gray-color !important;
+  color: white !important;
+}

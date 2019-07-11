@@ -7,7 +7,7 @@ import Gallery from './components/gallery/gallery';
 const Images = require.context("./images");
 
 function App() {
-  let [currentGallery, setCurrentGallery] = useState('portfolio');
+  let [currentGallery, setCurrentGallery] = useState(null);
 
   let changeGallery = (newGallery) => {
     document.querySelector('#gallery').scrollIntoView();

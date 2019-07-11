@@ -7,7 +7,6 @@
   background: $primary-color;
 
   height: 300px;
-
   margin: 25px;
 
   overflow: hidden;
@@ -16,6 +15,7 @@
   border: 1px solid $gray-color;
 
   img {
+    width: 400px;
     height: 200px;
     margin: 15px;
   }
@@ -53,4 +53,5 @@
   display: flex;
   flex-flow: column;
   text-align: left;
+  margin-right: 1rem;
 }
