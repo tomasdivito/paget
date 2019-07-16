@@ -15,23 +15,16 @@ export default () => {
   return (
     <div className="contact-section">
       <h1>Contact me!</h1>
-      <form>
-        <div className="input-field">
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" placeholder="name@example.com" onChange={onEmailChange}></input>
-        </div>
-        <div className="input-field">
-          <label htmlFor="subject">Subject</label>
-          <input type="text" name="subject" placeholder="Your subject" onChange={onSubjectChange}></input>
-        </div>
-        <div className="input-field">
-          <label htmlFor="message">Message</label>
-          <textarea name="message" placeholder="Your message" onChange={onMessageChange}></textarea>
-        </div>
-        <button className="btn-selector" type="submit">
-          Contact
-        </button>
-      </form>
+      <div className="contact-links">
+        <p>
+         <span role="img" aria-label="email emoji">📧</span>
+         <a href="mailto:tomasdv2@gmail.com">tomasdv2@gmail.com</a>
+        </p>
+        <p>
+          <span role="img" aria-label="phone emoji">📱</span>
+          <a href="tel:541167193192">+54-11-67193192</a>
+        </p>
+      </div>
     </div>
   );
 };

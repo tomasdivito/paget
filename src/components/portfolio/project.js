@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Skill from '../skill';
+import Skill from '../skill/skill';
 import './project.scss';
 const Images = require.context("../../images");
 

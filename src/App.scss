@@ -67,15 +67,6 @@ h2.portfolio-title {
   font-size: calc(10px + 2vmin);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .page-links {
   margin-bottom: 2rem;
   position: absolute;
@@ -84,20 +75,6 @@ h2.portfolio-title {
 
   a {
     margin: 20px;
-  }
-}
-
-.skill-tag {
-  display: inline-block;
-  font-size: 10px;
-  border: 1.5px solid $gray-color;
-  background-color: $secondary-color;
-  color: white;
-  padding: 3px;
-  margin: 5px;
-
-  span {
-    font-weight: bold;
   }
 }
 

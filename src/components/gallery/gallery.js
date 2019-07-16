@@ -7,9 +7,9 @@ import Contact from '../contact/contact';
 import './gallery.scss';
 
 const pages = {
-  portfolio: <Portfolio key="1" />,
-  about: <AboutMe key="2" />,
-  contact: <Contact key="3" />,
+  portfolio: <Portfolio />,
+  about: <AboutMe />,
+  contact: <Contact />,
 };
 
 function Gallery(props) {

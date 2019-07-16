@@ -1,0 +1,15 @@
+@import '../../style/colors.scss';
+
+.skill-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  border: 1.5px solid $gray-color;
+  background-color: $secondary-color;
+  color: white;
+  padding: 3px;
+  margin: 5px;
+
+  span {
+    font-weight: bold;
+  }
+}

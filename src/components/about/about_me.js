@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Skill from '../skill';
+import Skill from '../skill/skill';
 import './about_me.scss';
 
 const skills = [
