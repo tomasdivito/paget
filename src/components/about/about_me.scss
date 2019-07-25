@@ -5,3 +5,21 @@
     padding: 50px;
   }
 }
+
+.about-me {
+  display: flex;
+
+  .skill-list {
+    .skill-tag {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    flex-flow: column;
+  }
+}
+
+.portrait {
+  margin: 20px;
+}

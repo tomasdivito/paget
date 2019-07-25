@@ -30,9 +30,8 @@ function App() {
   return (
     <div id="app">
       <section className="landing">
-        <img alt="toti-logo" className="logo" src={Images('./toti-pixel.png')} />
         <h2 className="portfolio-title">Tomas Di Vito</h2>
-        <p>Freelance Software Developer</p>
+        <p>Software Developer</p>
         <div className="social-links">
           <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/tomasdivito">
             <img className="social-link" src={Images('./Github.svg')} alt="Github logo" />

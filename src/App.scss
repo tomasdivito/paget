@@ -63,8 +63,17 @@ h2.portfolio-title {
 }
 
 .landing {
+  background-image: url('./images/tywin_background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: $primary-color;
   font-size: calc(10px + 2vmin);
+
+  color: $bright-color;
+  text-shadow: 0 0 10px $bright-color;
 }
 
 .page-links {
@@ -72,6 +81,7 @@ h2.portfolio-title {
   position: absolute;
   bottom: 0;
   font-size: 1rem;
+  color: $gray-color;
 
   a {
     margin: 20px;
