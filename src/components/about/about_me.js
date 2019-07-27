@@ -31,7 +31,7 @@ export default () => (
       </div>
       <div className="about-me-summary">
         <p>
-          I’m a Computing Engineering student at Universidad Nacional de La Matanza, I started working professionally as a
+          I’m a Computer Engineering student at Universidad Nacional de La Matanza, I started working professionally as a
           software developer in 2016 although I started learning programming when I was 14 years old. I worked for personal
           projects and for clients as a freelancer. I have experience in the web using <b>Javascript</b>,
           <b>React</b>, <b>AngularJS</b> and the tools surrounding them. I also have experience on backend technologies using <b>Ruby on Rails</b>,
