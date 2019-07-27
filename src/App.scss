@@ -46,6 +46,20 @@ h2.portfolio-title {
   margin-bottom: 0px;
 }
 
+.title-background {
+  background-color: black;
+  padding: 10px 50px 10px 50px;
+  transform: skewX(-20deg);
+  margin-bottom: 25px;
+  opacity: .90;
+  color: white;
+
+  p, h2 {
+    transform: skewX(20deg);
+    margin: 0;
+  }
+}
+
 .social-link {
   height: 50px;
   width: 50px;

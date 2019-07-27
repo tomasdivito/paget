@@ -8,8 +8,10 @@ function App() {
   return (
     <div id="app">
       <section className="landing">
-        <h2 className="portfolio-title">Tomas Di Vito</h2>
-        <p>Software Developer</p>
+        <div className="title-background">
+          <h2 className="portfolio-title">Tomas Di Vito</h2>
+          <p>Software Developer</p>
+        </div>
         <div className="social-links">
           <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/tomasdivito">
             <img className="social-link" src={Images('./Github.svg')} alt="Github logo" />
