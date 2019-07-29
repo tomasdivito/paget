@@ -15,7 +15,7 @@ export default () => {
   return (
     <div className="contact-section">
       <h1>Contact me!</h1>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" netlify>
         <p>
           <label>Your Name: <input type="text" name="name" /></label>   
         </p>
