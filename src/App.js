@@ -45,17 +45,23 @@ function App() {
             <img className="social-link" src={Images('./Twitter.svg')} alt="Twitter logo" />
           </a>
         </div>
-        <div className="page-links">
-          <a className="page-link" href="#about" onClick={() => changeGallery('about')}>
-            About Me
-          </a>
-          <a className="page-link" href="#portfolio" onClick={() => changeGallery('portfolio')}>
-            Portfolio
-          </a>
-          <a className="page-link" href="#contact" onClick={() => changeGallery('contact')}>
-            Contact
-          </a>
-        </div>
+        <ul className="page-links">
+          <li>
+            <a className="page-link" href="#about" onClick={() => changeGallery('about')}>
+              About Me
+            </a>
+          </li>
+          <li>
+            <a className="page-link" href="#portfolio" onClick={() => changeGallery('portfolio')}>
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a className="page-link" href="#contact" onClick={() => changeGallery('contact')}>
+              Contact
+            </a>
+          </li>
+        </ul>
       </section>
       <Gallery current={currentGallery} />
     </div>

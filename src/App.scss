@@ -102,10 +102,16 @@ h2.portfolio-title {
   bottom: 0;
   font-size: 1rem;
   color: $gray-color;
+  padding: 0;
 
-  a {
+  li {
+    display: inline;
     margin: 20px;
+    background-color: $primary-color;
+    padding: .5rem;
+    border-radius: 25px;
   }
+
 }
 
 .btn-selector {
