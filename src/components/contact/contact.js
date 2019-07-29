@@ -15,16 +15,26 @@ export default () => {
   return (
     <div className="contact-section">
       <h1>Contact me!</h1>
-      <div className="contact-links">
+      <form name="contact" method="POST" data-netlify="true">
         <p>
-         <span role="img" aria-label="email emoji">📧</span>
-         <a href="mailto:tomasdv2@gmail.com">tomasdv2@gmail.com</a>
+          <label>Your Name: <input type="text" name="name" /></label>   
         </p>
         <p>
-          <span role="img" aria-label="phone emoji">📱</span>
-          <a href="tel:541167193192">+54-11-67193192</a>
+          <label>Your Email: <input type="email" name="email" /></label>
         </p>
-      </div>
+        <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
     </div>
   );
 };
