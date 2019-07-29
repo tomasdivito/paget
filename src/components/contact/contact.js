@@ -1,17 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './contact.scss';
 
 export default () => {
-  const [form, setForm] = useState({ email: null, subject: null, message: null });
-
-  const onEmailChange = event =>
-    setForm({ ...form, email: event.target.value });
-  const onSubjectChange = event =>
-    setForm({ ...form, subject: event.target.value });
-  const onMessageChange = event =>
-    setForm({ ...form, message: event.target.value });
-
   return (
     <div className="contact-section">
       <h1>Contact me!</h1>
