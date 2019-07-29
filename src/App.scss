@@ -34,6 +34,12 @@ section {
 
   padding-left: 100px;
   padding-right: 100px;
+
+  
+  @media (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .logo {
@@ -44,6 +50,20 @@ section {
 
 h2.portfolio-title {
   margin-bottom: 0px;
+}
+
+.text-background {
+  background-color: $primary-color;
+  padding: 10px 50px 10px 50px;
+  transform: skewX(-20deg);
+  margin-bottom: 25px;
+  opacity: .90;
+  color: white;
+
+  p, h2 {
+    transform: skewX(20deg);
+    margin: 0;
+  }
 }
 
 .social-link {
@@ -93,8 +113,11 @@ h2.portfolio-title {
   border: 0;
   margin: 5px;
 
+  border: 2px solid #000000;
+  border-radius: 25px 25px 25px 25px;
+
   color: white;
-  background-color: $primary-color;
+  background-color: $secondary-color;
 
   &:hover {
     background-color: white;
@@ -110,5 +133,5 @@ h2.portfolio-title {
 
 .btn-selector-active {
   background-color: $gray-color !important;
-  color: white !important;
+  color: $primary-color !important;
 }

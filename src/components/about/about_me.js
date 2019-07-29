@@ -45,9 +45,6 @@ export default () => (
       <div className="skill-list">
         {skills.map((skill, index) => <Skill skill={skill} key={index} />)}
       </div>
-      <div className="skills-image">
-        <img alt="toti-logo" className="logo" src={Avatar} />
-      </div>
     </div>
   </div>
 );
