@@ -40,11 +40,5 @@ export default () => (
         </p>
       </div>
     </div>
-    <h1>My Skills</h1>
-    <div className="about-me">
-      <div className="skill-list">
-        {skills.map((skill, index) => <Skill skill={skill} key={index} />)}
-      </div>
-    </div>
   </div>
 );
