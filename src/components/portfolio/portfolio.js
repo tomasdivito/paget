@@ -8,12 +8,13 @@ export default () => {
   const PROJECTS = PROJECTS_JSON.projects;
 
   return (
-    <React.Fragment>
+    <div className="portfolio-section">
+      <h1>Projects Showcase</h1>
       <div className="portfolio-gallery">
         {PROJECTS.map(project => (
           <Project key={project.code} project={project} />
         ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
