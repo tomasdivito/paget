@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   background: $primary-color;
 
-  height: 300px;
+  height: 200px;
+  width: 200px;
   margin: 25px;
 
   overflow: hidden;
@@ -15,43 +17,29 @@
   border: 1px solid $gray-color;
 
   img {
-    width: 400px;
-    height: 200px;
-    margin: 15px;
-  }
-  
-  h4 {
+    width: 450px;
+    height: 100%;
     margin: 0;
-    margin-bottom: 1rem;
   }
 
-  .details {
-    transition: all .2s ease-in-out;
-    display: none;
-  }
-
-  @media (max-width: 768px) {
-    .project-image {
-      display: none;
-    }
-
-    padding: 1rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    height: 200px;
-  }
 }
 
 .portfolio-gallery {
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .project-summary {
-  display: flex;
-  flex-flow: column;
-  text-align: left;
-  margin-right: 1rem;
+  z-index: 10;
+  position: absolute;
+  color: $primary-color;
+  text-shadow: 0 0 25px $bright-color;
 }
