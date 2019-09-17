@@ -2,13 +2,19 @@
 
 .project {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   position: relative;
   background: $primary-color;
 
-  height: 200px;
-  width: 200px;
+  cursor: pointer;
+  padding: 0;
+
+  width: 300px;
+  min-width: 300px;
+  min-height: 276px;
+
   margin: 25px;
 
   overflow: hidden;
@@ -17,11 +23,28 @@
   border: 1px solid $gray-color;
 
   img {
-    width: 450px;
+    width: 100%;
     height: 100%;
+    overflow: hidden;
+  }
+  
+  h4 {
     margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
+  .details {
+    transition: all .2s ease-in-out;
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    height: 200px;
+  }
 }
 
 .portfolio-gallery {
@@ -29,6 +52,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-flow: column;
+  }
 }
 
 .project-image {
@@ -38,8 +65,12 @@
 }
 
 .project-summary {
-  z-index: 10;
-  position: absolute;
-  color: $primary-color;
-  text-shadow: 0 0 25px $bright-color;
+  display: flex;
+  flex-flow: column;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $link-color;
 }
