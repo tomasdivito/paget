@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Skill from '../skill/skill';
 import './project.scss';
 const Images = require.context("../../images");
 
@@ -12,7 +11,7 @@ const ProjectButton = function ({ project, selected, evt }) {
         <img alt={`${project.name} logo`} src={Images(`./${project.thumbnail}`)} />
       </div>
       <div className="project-summary">
-        <h4>{project.name}</h4>
+        <h4 className="project-title">{project.name}</h4>
       </div>
     </button>
   )
